@@ -13,9 +13,8 @@ on:
     branches:
       - "feature/*"
       - "develop"
-      - "main"
   workflow_dispatch:
-    major_version: 2.0.5
+    major_version: 2.0.11
 
 jobs:
   build:
@@ -37,7 +36,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: mmushfique12/restaurant_portal
-        tags: latest
+        tags: v1
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
