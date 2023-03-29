@@ -16,10 +16,10 @@ on:
       - "main"
   pull_request:
     branches:
-      -"develop"
-      -"main" ]
+      - "develop"
+      - "main"
   workflow_dispatch:
-    major_version: 1.0.2
+    major_version: 1.0.5
 
 jobs:
   build:
