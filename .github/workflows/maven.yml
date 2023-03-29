@@ -10,9 +10,14 @@ name: RestaurantCI/CD_flow
 
 on:
   push:
-    branches: [ "feature/*" ]
+    branches:
+      - "feature/*"
+      - "develop"
+      - "main"
   pull_request:
-    branches: [ "develop","main" ]
+    branches:
+      -"develop"
+      -"main" ]
   workflow_dispatch:
     major_version: 1.0.2
 
